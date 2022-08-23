@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="script.js"></script>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Udemy</title>
+  <link rel="stylesheet" href="/fontawesome-free-6.1.2-web/css/all.css">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <!-- start Nav-Bar-->
+  <div class="continer">
+    <ul class="nav-Bar">
+      <li class="menu-icon"><button><i class="fa-solid fa-bars"></i></button></li>
+      <li> <img class="logo" src="img/Udemy_logo.svg.png" alt="logo" /></li>
+      <li class="test"> <button class="without-border" type="button">Catorgries</button></li>
+      <li class="searchBar test">
+        <form onsubmit="searchButton();return false">
+          <button id="search-button" class="without-border" type="submit"><i
+              class="fa-solid fa-magnifying-glass"></i></button>
+          <input id="inputSearch" class="without-border" placeholder="Search for anything" />
+        </form>
+      </li>
+      <li class="test"><button class="without-border" type="button">Udemy Business</button></li>
+      <li class="test"><button class="without-border" type="button">Teach on Udemy</button> </li>
+      <li class="test "><button class="without-border shoping-icon"><i class="fa-solid fa-cart-shopping"></i></button>
+      </li>
+      <li class="test"><button type="button">Log in</button> </li>
+      <li class="test"><button class="signup" type="button">Sign up</button></li>
+      <li class="test"><button><i style="font-size: 20px;" class="fa-solid fa-globe"></i></button></li>
+    </ul>
+    <!-- End Nav-Bar-->
+
+
+    <!--Start header-->
+    <header class="headContiner">
+      <div class="head-Bar">
+        <h1>New to Udemy? Lucky you.</h1>
+        <h2>Courses start at E£169.99.Get your new-student offer befort it expires.</h2>
+      </div>
+      <img src="img/alarm.png" alt="alarm " class="alarmphoto" />
+    </header>
+    <!--End header-->
+    <section>
+      <h1>A broad selection of courses</h1>
+
+      <p>
+        Choose from 185,000 online video courseswith new additions published
+        every month
+      </p>
+
+      <nav class="box_types">
+        <div class="nav nav-tabs type" id="nav-tab" role="tablist">
+          <button class="nav-link active type" onclick="get_courses('python');" data-bs-toggle="tab"
+            data-bs-target="#nav-Python" type="button" role="tab" aria-controls="nav-Python"
+            aria-selected="true">Python</button>
+          <button class="nav-link type" onclick="get_courses('excel');" data-bs-toggle="tab" data-bs-target="#nav-Excel"
+            type="button" role="tab" aria-controls="nav-Excel" aria-selected="false">Excel</button>
+          <button class="nav-link type" onclick="get_courses('web development');" data-bs-toggle="tab"
+            data-bs-target="#nav-Webdevelopment" type="button" role="tab" aria-controls="nav-Webdevelopment"
+            aria-selected="false">Web development</button>
+          <button class="nav-link type" onclick="get_courses('javascript');" data-bs-toggle="tab"
+            data-bs-target="#nav-JavaScript" type="button" role="tab" aria-controls="nav-JavaScript"
+            aria-selected="false">JavaScript</button>
+          <button class="nav-link type" onclick="get_courses('AWS Certification');" data-bs-toggle="tab"
+            data-bs-target="#nav-AWSCertification" type="button" role="tab" aria-controls="nav-AWSCertification"
+            aria-selected="false">AWS Certification</button>
+          <button class="nav-link type" onclick="get_courses('Drawing');" data-bs-toggle="tab" data-bs-target="#nav-Drawing"
+            type="button" role="tab" aria-controls="nav-Drawing" aria-selected="false">Drawing</button>
+        </div>
+      </nav>
+
+      <div class="box">
+        <div id="discription1" class="description"></div>
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner marginrl-cards new-cards" id="cards-items">
+          </div>
+          <button class="carousel-control-prev prev-btn" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next next-btn" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="categories_container">
+        <h4 class="highlight fw-bold mt-5 mb-4">Top categories</h4>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-4">
+          <div>
+            <img class="w-100" src="https://s.udemycdn.com/home/top-categories/lohp-category-design-v2.jpg"
+              alt="categories">
+          </div>
+          <p class="fw-bold">Design</p>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <div>
+            <img class="w-100" src="https://s.udemycdn.com/home/top-categories/lohp-category-development-v2.jpg"
+              alt="categories">
+          </div>
+          <p class="fw-bold">Development</p>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <div>
+            <img class="w-100" src="https://s.udemycdn.com/home/top-categories/lohp-category-marketing-v2.jpg"
+              alt="categories">
+          </div>
+          <p class="fw-bold">Marketing</p>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <div>
+            <img class="w-100" src="https://s.udemycdn.com/home/top-categories/lohp-category-it-and-software-v2.jpg"
+              alt="categories">
+          </div>
+          <p class="fw-bold">IT and Software</p>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <div>
+            <img class="w-100"
+              src="https://s.udemycdn.com/home/top-categories/lohp-category-personal-development-v2.jpg"
+              alt="categories">
+          </div>
+          <p class="fw-bold">Personal Development</p>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <div>
+            <img class="w-100" src="https://s.udemycdn.com/home/top-categories/lohp-category-business-v2.jpg"
+              alt="categories">
+          </div>
+          <p class="fw-bold">Business</p>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <div>
+            <img class="w-100" src="https://s.udemycdn.com/home/top-categories/lohp-category-photography-v2.jpg"
+              alt="categories">
+          </div>
+          <p class="fw-bold">Photography</p>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <div>
+            <img class="w-100" src="https://s.udemycdn.com/home/top-categories/lohp-category-music-v2.jpg"
+              alt="categories">
+          </div>
+          <p class="fw-bold">music</p>
+        </div>
+      </div>
+    </section>
+    </section>
+  </div>
+  <script src="script.js"></script>
+
+</body>
+<script src="https://kit.fontawesome.com/1f24a3ee93.js" crossorigin="anonymous"></script>
+
+</html>

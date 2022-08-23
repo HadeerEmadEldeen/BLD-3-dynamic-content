@@ -1,0 +1,354 @@
+body {
+  font-weight: 400;
+  font-family: sans, sf pro text, -apple-system, BlinkMacSystemFont, Roboto,
+    segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji,
+    segoe ui symbol;
+  font-size: 1rem;
+}
+
+
+
+.head-Bar {
+  margin-top: -10rem;
+  height: 30%;
+  background-color: white;
+  width: 30%;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.3);
+  padding-bottom: 0.8rem;
+  padding-left: 0.7rem;
+}
+
+.logo {
+  margin: 1rem;
+  margin-right: 0;
+}
+
+.continer {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: column;
+
+}
+
+.nav-Bar {
+  background-color: white;
+  display: flex;
+  box-shadow: 4px 4px 7px 3px rgba(0, 0, 0, 0.2);
+  justify-content: space-between;
+  align-items: flex-end;
+  align-items: center;
+  z-index: 1;
+}
+
+.nav-Bar button {
+  font-size: 0.9rem;
+}
+
+.signup {
+  background-color: black;
+  color: white;
+}
+
+.marginrl {
+  margin-right: 3rem;
+  margin-left: 3rem;
+  margin-top: 2rem;
+}
+
+.marginrl-cards {
+  margin-right: 3rem;
+  margin-left: 0.9rem;
+  margin-top: 1rem;
+}
+
+.headContiner {
+  margin: 0px 7rem 2rem 7rem;
+  font-size: 0.8rem;
+  background-color: #f8f9fb;
+  display: flex;
+
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card1 {
+  width: 15%;
+  display: inline-block;
+}
+
+h1 {
+  margin-top: 40px;
+}
+
+section {
+  margin: 0px 7rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.box_types {
+  padding-bottom: 10px;
+}
+
+.type {
+  margin: 10px;
+  font-weight: 800;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.box {
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+.new-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+}
+
+img {
+  width: 5rem;
+  margin: 0rem;
+}
+
+button {
+  background-color: white;
+  margin: 0.07rem 0.2rem;
+  border: 1px solid black;
+  padding: 0 0.8rem;
+  height: 2rem;
+  /* //box-sizing: border-box; */
+}
+
+a h3 {
+  /* background-color: red; */
+  max-width: 14.5rem;
+  display: inline-block;
+}
+
+article {
+  /* max-width: 1rem; */
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+
+li {
+  margin: 0;
+  padding: 0;
+  display: block;
+  text-align: center;
+}
+
+form {
+  width: 100%;
+  border-radius: 30px;
+  text-align: left;
+  align-items: center;
+  display: flex;
+  background-color: #f7f9fa;
+
+}
+
+form button {
+  padding: 0;
+  margin-left: 0.8rem;
+  margin-top: 0.0rem;
+  background: transparent;
+
+}
+
+form input {
+  width: 80%;
+  background: transparent;
+
+}
+
+.checked {
+  color: orange;
+}
+
+.course-element {
+  display: flex;
+  flex-direction: column;
+}
+
+.new-cards img {
+  height: 8rem;
+  width: 100%;
+}
+
+.new-cards a {
+  text-decoration: none;
+}
+
+.new-cards a:visited {
+  text-decoration: none;
+}
+
+.new-cards h3 {
+  max-width: 14.5rem;
+  margin-top: .3rem;
+  margin-bottom: 1.rem;
+  color: black;
+  /* font-style: normal; */
+  text-decoration: none;
+
+  display: block;
+  /* or inline-block */
+  /* text-overflow: ellipsis; */
+  word-wrap: break-word;
+  overflow: hidden;
+  max-height: 2.1em;
+  line-height: 1em;
+  font-size: 1.2rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  /* number of lines to show */
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+
+.new-cards h5 {
+  color: black;
+  font-weight: bold;
+  font-size: 1.0rem;
+}
+
+
+.searchBar {
+  width: 40%;
+
+  border-radius: 15rem;
+  border: black 1px solid;
+}
+
+
+.color-p {
+  color: gray;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  /* number of lines to show */
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.alarmphoto {
+  width: 40rem;
+}
+
+.without-border {
+  border: none;
+}
+
+.explore {
+  height: 3rem;
+  max-width: 10rem;
+}
+
+.menu-icon {
+  display: none;
+}
+
+
+
+.smallSpace {
+  flex-grow: 2;
+  /* background-color:red; */
+}
+
+/* ? */
+.shoping-icon {
+  font-size: 40px;
+}
+
+@media screen and (max-width: 800px) {
+  .alarmphoto {
+    width: 15rem;
+  }
+
+  .navigationBar {
+    justify-content: space-between;
+  }
+
+  .head-Bar {
+    width: 70%;
+  }
+
+  .logo {
+    margin-left: 10rem;
+    margin-right: 80px;
+
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .test {
+    display: none;
+  }
+
+  .card {
+    display: block;
+    width: 250px;
+  }
+}
+
+
+@media screen and (max-width: 980px) {
+  .headContiner {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .head-Bar {
+    width: 100%;
+    margin-top: 0rem;
+    box-shadow: 0 0;
+  }
+
+  .logo {
+    width: 4rem;
+  }
+
+  .navigationBar button {
+    display: none;
+  }
+  .card1{
+    width:25%;
+    margin-left: 4%;
+  }
+
+}
+
+.box .next-btn,.box .prev-btn{
+  top: 2.7rem;
+  bottom: auto;
+  background-color: black;
+  opacity: 0.8;
+  border: 1px solid #736a6e;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
+  border-radius: 50%;
+  width: 40px;
+}
+
+@media screen and (max-width: 700px) {
+  .card1{
+    width: 50%;
+    margin-left: 15%;
+  }
+}
+
